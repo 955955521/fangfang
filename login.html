@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录注册</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/base.js"></script>
+    <script src="./js/getverification.js"></script>
+   
+</head>
+
+<body>
+    <div class="login_title login_valid">
+        <h2><a href="">暴风影音</a></h2>
+    </div>
+    <!-- 登录 -->
+    <div class="login_content" id="login">
+        <!-- 有效区 -->
+        <div class="new-sso-body login_valid">
+            <div class="new-sso-duang"></div>
+            <!-- 登录信息 -->
+            <div class="new-sso-box">
+                <h2 class="new-sso-login">账号登录</h2>
+                 <!-- 错误信息提示 -->
+                 <div class="sso-error-message"></div>
+                <!-- 登录名 -->
+                <div class="sso-input-wraper clearfix">
+                    <em class="sso_name"></em>
+                    <input type="text" placeholder="输入手机/邮箱/用户名" onfocus="this.placeholder=''" onblur="this.placeholder='输入手机/邮箱/用户名'" id="login_user">
+                </div>
+                <!-- 登录密码 -->
+                <div class="sso-input-wraper clearfix">
+                    <em class="sso_pwd"></em>
+                    <input type="text" placeholder="输入密码" onfocus="this.placeholder=''" onblur="this.placeholder='输入密码'" id="login_pwd">
+                </div>
+                <!-- 找回密码 及注册 -->
+                <div class="sso-checkbox-wraper clearfix">
+                    <input type="checkbox" checked class="remeber" id="login_remeber">
+                    <label for="login_remeber" id="rl_label" class="active"></label>
+                    <span class="remeber_text">记住我</span>
+                    <div class="sso-psw-back">
+                        <a href="javascript:;" id="change_register">立即注册</a><a href="#">找回密码</a>
+                    </div>
+                </div>
+                <input type="button" value="登录" id="login_botton">
+                <!-- 手机验证码登录 -->
+                <div class="sso-phe-sub clearfix sso-phe-sub-login">
+                    <a href="#" class="new-sso-quesstion">遇到问题</a>
+                    <a href="#" class="mobilecheck">手机验证码登录></a>
+                </div>
+                <!-- 其他方式登录 -->
+                <div class="otherlogin">
+                    <i class="otherlogin_left"></i>
+                    <span>其他方式登录</span>
+                    <i class="otherlogin_right"></i>
+                </div>
+                <!-- 登录方式 -->
+                <ul class="login_method clearfix">
+                    <li class="qq"><a href="">QQ</a></li>
+                    <li class="weibo"><a href="">微博</a></li>
+                    <li class="wechat"><a href="">微信</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <!-- 注册 -->
+    <div class="login_content" id="register">
+        <!-- 有效区 -->
+        <div class="new-sso-body login_valid">
+            <div class="new-sso-duang"></div>
+            <!-- 注册信息 -->
+            <div class="new-sso-box">
+                <h2 class="new-sso-register">账号注册</h2>
+                <!-- 错误信息提示 -->
+                <div class="sso-error-message"></div>
+                <!-- 输入注册手机号 -->
+                <div class="sso-input-wraper clearfix">
+                    <em class="sso_name_register"></em>
+                    <input type="text" placeholder="输入手机号" onfocus="this.placeholder=''" onblur="this.placeholder='输入手机号'" id="register_phone">
+                </div>
+                <!-- 输入注册密码 -->
+                <div class="sso-input-wraper clearfix">
+                    <em class="sso_pwd"></em>
+                    <input type="text" placeholder="输入密码" onfocus="this.placeholder=''" onblur="this.placeholder='输入密码'" id="register_pwd">
+                    <i class="sso-psw-strg"></i>
+                </div>
+                <!-- 验证码 -->
+                <div class="sso-match-wraper clearfix">
+                    <div class="new-sso-fk clearfix">
+                        <em></em>
+                        <input type="text" class="new-sso-idc new-sso-short-match" placeholder="输入右侧验证码" onfocus="this.placeholder=''" onblur="this.placeholder='输入右侧验证码'">
+                    </div>
+                    <span class="new-sso-idc-img"></span>
+                    <span class="new-sso-fes-btn"></span>
+                </div>
+                <!-- 手机短信验证码 -->
+                <div class="sso-match-wraper clearfix">
+                    <div class="new-sso-fk clearfix">
+                        <em></em>
+                        <input type="text" class="new-sso-idc new-sso-short-phone" placeholder="输入短信验证码" onfocus="this.placeholder=''" onblur="this.placeholder='输入短信验证码'">
+                    </div>
+                    <a href="javascript:;" class="free-message">免费获取短信</a>
+                </div>
+                <!-- 协议 -->
+                <div class="sso-checkbox-wraper clearfix">
+                    <input type="checkbox" class="remeber" id="register_remeber" checked>
+                    <label for="register_remeber" id="rr_label" class="active"></label>
+                    <span class="remeber_text">我同意<a href="#">《暴风影音注册协议》</a></span>
+                    <div class="sso-psw-back">
+                        <a href="javascript:;" id="change_login">立即登录></a>
+                    </div>
+
+                </div>
+                <input type="button" value="注册" id="register_button">
+                <div class="sso-phe-sub clearfix sso-phe-sub-register">
+                    <a href="#" class="new-sso-quesstion">遇到问题</a>
+                </div>
+                <!-- 其他方式登录 -->
+                <div class="otherlogin">
+                    <i class="otherlogin_left"></i>
+                    <span>其他方式登录</span>
+                    <i class="otherlogin_right"></i>
+                </div>
+                <!-- 登录方式 -->
+                <ul class="login_method clearfix">
+                    <li class="qq"><a href="">QQ</a></li>
+                    <li class="weibo"><a href="">微博</a></li>
+                    <li class="wechat"><a href="">微信</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="login_footer">
+        <p class="logfoot_con">客服 QQ：800111739 电话：4000987846（周一至周日9:30-21:30）<br>暴风集团股份有限公司</p>
+    </div>
+   
+    <script src="./js/register.js"></script>
+    
+</body>
+
+</html>

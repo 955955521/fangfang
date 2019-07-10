@@ -1,0 +1,1076 @@
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.layout {
+  width: 1100px;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body {
+  background: #f3f3f3;
+}
+/*头部*/
+#title {
+  width: 100%;
+  height: 64px;
+  background: url('../img/index/vip-bgs.png') repeat-x 0 0;
+  border-bottom: 1px solid #c7c4c5;
+  box-shadow: 0 1px 3px#d8d7d7;
+}
+#title .index_title {
+  width: 1100px;
+  height: 64px;
+  margin: 0 auto;
+}
+#title .index_title h2 {
+  float: left;
+  margin: 17px 18px 6px;
+}
+#title .index_title h2 a {
+  width: 191px;
+  height: 29px;
+  display: block;
+  background: url('../img/index/vip-logo.png') no-repeat 0 -144px;
+}
+#title .index_title ul {
+  float: right;
+  height: 30px;
+  margin: 17px 7px;
+}
+#title .index_title ul li {
+  float: left;
+}
+#title .index_title ul li a {
+  height: 30px;
+  line-height: 30px;
+  margin: 0 15px;
+  color: #686868;
+}
+#title .index_title ul li a:hover {
+  color: #0b68c8;
+}
+/*tab切换*/
+#tab {
+  width: 1100px;
+  margin: 0 auto;
+  height: 38px;
+  background: url('../img/index/vip-bgs.png') repeat-x 0 -74px;
+}
+#tab nav {
+  padding-left: 44px;
+}
+#tab nav a {
+  width: 115px;
+  height: 38px;
+  float: left;
+  display: block;
+  text-align: center;
+  line-height: 38px;
+  color: white;
+}
+#tab nav a.active {
+  background: #0b68c8;
+}
+/*页尾菜单*/
+#foot_menu {
+  width: 1100px;
+  margin: 0 auto;
+}
+#foot_menu ul {
+  padding: 55px 0 40px;
+}
+#foot_menu ul li {
+  position: relative;
+  float: left;
+  width: 144px;
+  height: 100px;
+  border-right: 1px solid #dedede;
+  padding-left: 109px;
+}
+#foot_menu ul li:nth-last-child(1) {
+  border-right: 0;
+}
+#foot_menu ul li em {
+  width: 51px;
+  height: 51px;
+  display: block;
+  position: absolute;
+  left: 48px;
+  top: 0;
+  background: url("../img/index/vip-powers.png");
+}
+#foot_menu ul li em.newone {
+  background-position: 0 -111px;
+}
+#foot_menu ul li em.vip {
+  background-position: -51px -111px;
+}
+#foot_menu ul li em.pay {
+  background-position: -102px -111px;
+}
+#foot_menu ul li em.other {
+  background-position: -153px -111px;
+}
+#foot_menu ul li dt {
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+#foot_menu ul li dd a {
+  display: block;
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+  color: #000;
+}
+#foot_menu ul li dd a:hover {
+  color: #0b68c8;
+}
+#foot_menu p {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to top, #ffffff 0, #ffffff 1px, #dedede 1px, #dedede 2px);
+}
+#copyright {
+  width: 1100px;
+  height: 96px;
+  margin: 55px auto 70px;
+  text-align: center;
+  color: #999;
+  line-height: 24px;
+}
+#copyright p a {
+  color: #999;
+  font-size: 12px;
+}
+#copyright p a:hover {
+  text-decoration: underline;
+}
+.gotop {
+  width: 52px;
+  height: 52px;
+  position: fixed;
+  display: none;
+  right: 0;
+  bottom: 22px;
+  background: #fbfbfb url('../img/index/icon_new.png') no-repeat;
+  border: #dcdbdb 1px solid;
+  background-position: 0 0 ;
+}
+.gotop:hover {
+  background-position: -52px 0;
+}
+body {
+  background: #fff;
+}
+.watch {
+  width: 1180px;
+  margin: 0 auto;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/*头部导航*/
+#title_watch {
+  width: 100%;
+  height: 55px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: #242428;
+}
+#title_watch .title_valid {
+  width: 1180px;
+  margin: 0 auto;
+  height: 55px;
+  overflow: hidden;
+}
+#title_watch .title_valid .title_left {
+  float: left;
+  height: 40px;
+  margin: 14px 0 0 0;
+}
+#title_watch .title_valid .title_left .hd-logo {
+  float: left;
+}
+#title_watch .title_valid .title_left .hd-logo a {
+  width: 119px;
+  height: 29px;
+  display: block;
+  background: url('../img/watch/playicons.png') no-repeat -181px -124px;
+  text-indent: -9999px;
+  margin-right: 16px;
+}
+#title_watch .title_valid .title_left .nav-index {
+  float: left;
+}
+#title_watch .title_valid .title_left .nav-index a {
+  display: block;
+  height: 29px;
+  line-height: 29px;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #989898;
+}
+#title_watch .title_valid .title_left .nav-index a:hover {
+  color: #1a9eff;
+}
+#title_watch .title_valid .title_left .menu-guide {
+  float: left;
+  margin-right: 62px;
+}
+#title_watch .title_valid .title_left .menu-guide a {
+  display: block;
+  height: 29px;
+  width: 52px;
+  line-height: 29px;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #989898;
+  background: url("../img/watch/indexicons.png") no-repeat -329px -554px;
+}
+#title_watch .title_valid .title_left .menu-guide a:hover {
+  color: #1a9eff;
+  background-position: -329px -582px;
+}
+#title_watch .title_valid .title_left .search {
+  float: left;
+  margin-right: 114px;
+}
+#title_watch .title_valid .title_left .search input {
+  float: left;
+  width: 361px;
+  height: 30px;
+  background: #383a42;
+  padding-left: 20px;
+  border-radius: 5px 0 0 5px;
+}
+#title_watch .title_valid .title_left .search span {
+  float: left;
+  width: 87px;
+  height: 30px;
+  display: block;
+  background: url("../img/watch/playicons.png") no-repeat -115px -40px;
+}
+#title_watch .title_valid .title_left .tools {
+  float: left;
+}
+#title_watch .title_valid .title_left .tools li {
+  float: left;
+  height: 12px;
+  padding-top: 27px;
+  margin-right: 36px;
+  background: url("../img/watch/playicons.png") no-repeat;
+  color: #989898;
+}
+#title_watch .title_valid .title_left .tools li.look {
+  background-position: -116px 0;
+}
+#title_watch .title_valid .title_left .tools li.save {
+  background-position: -172px -1px;
+}
+#title_watch .title_valid .title_left .tools li.phone {
+  background-position: -220px -1px;
+  margin-right: 23px;
+}
+#title_watch .title_valid .title_left .logre {
+  float: left;
+  display: block;
+  padding-top: 24px;
+  background: url("../img/watch/playicons.png") no-repeat -266px 0;
+}
+#title_watch .title_valid .title_left .logre a {
+  color: #989898;
+  font-size: 12px;
+  line-height: 19px;
+}
+#title_watch .title_valid .title_left .menu-guide-list {
+  width: 100%;
+  height: 82px;
+  position: absolute;
+  left: 0;
+  top: 55px;
+  background: #191919;
+  display: none;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav {
+  margin-top: 24px;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav .nav-list01 {
+  float: left;
+  width: 438px;
+  padding-left: 17px;
+  border-right: 1px solid #c5c5c5;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav .nav-list01 li {
+  float: left;
+  margin-bottom: 15px;
+  padding: 0 29px;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav .nav-list01 li a {
+  color: white;
+  font-size: 12px;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav .nav-list01 li a:hover {
+  color: #1a9eff;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav .nav-list02 {
+  float: left;
+  width: 128px;
+  padding-left: 18px;
+  border-right: #c5c5c5 1px solid;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav .nav-list02 li {
+  float: left;
+  width: 48px;
+  margin: 0 6px 15px 6px;
+  text-align: center;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav .nav-list02 li a {
+  color: white;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav .nav-list02 li a:hover {
+  color: #1a9eff;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav .nav-biglist {
+  float: left;
+  width: 176px;
+  padding: 0 2px 0 4px;
+  height: 46px;
+  border-right: #c5c5c5 1px solid;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav .nav-biglist li {
+  float: left;
+  width: 28px;
+  height: 44px;
+  margin: 0 8px;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav .nav-biglist li a {
+  width: 28px;
+  height: 16px;
+  display: inline-block;
+  padding-top: 28px;
+  background: url("../img/watch/indexicons.png") no-repeat;
+  color: white;
+  font-size: 12px;
+  line-height: 19px;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav .nav-biglist li a.store {
+  background-position: -240px -160px;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav .nav-biglist li a.fengxiu {
+  background-position: -272px -160px;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav .nav-biglist li a.mojing {
+  background-position: -305px -160px;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav .nav-biglist li a.licai {
+  background-position: -338px -160px;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav .nav-download-item {
+  float: left;
+  width: 120px;
+  height: 28px;
+  background-color: #208fff;
+  background: url(../img/watch/download.png) no-repeat;
+  box-shadow: #0082ff 0 0 5px;
+  border-radius: 2px;
+  margin-right: 24px;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav .nav-download-item:nth-of-type(1) {
+  margin-left: 42px;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav .nav-download-item a {
+  width: 90px;
+  display: inline-block;
+  text-align: center;
+  line-height: 28px;
+  color: white;
+}
+#title_watch .title_valid .title_left .menu-guide-list .layer-nav .nav-download-item span {
+  display: block;
+  font-size: 12px;
+  color: #ffffff;
+}
+#title_watch .title_valid .title_left .looksave-list {
+  position: absolute;
+  top: 59px;
+}
+#title_watch .title_valid .title_left .looksave-list#viewRecordPane {
+  left: 1016px;
+  display: none;
+}
+#title_watch .title_valid .title_left .looksave-list#viewRecordPane1 {
+  left: 1078px;
+  display: none;
+}
+#title_watch .title_valid .title_left .looksave-list .hoverBox {
+  width: 252px;
+  height: 300px;
+  background: #fff;
+  border-radius: 5px;
+  z-index: 20;
+}
+#title_watch .title_valid .title_left .looksave-list .hoverBox:before {
+  position: absolute;
+  left: 15px;
+  top: -4px;
+  content: "";
+  width: 0;
+  border-width: 0 4px 4px;
+  border-style: solid;
+  border-bottom-color: #fff;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+#title_watch .title_valid .title_left .looksave-list .hoverBox .title {
+  width: 216px;
+  height: 38px;
+  padding: 0 22px 0 14px;
+  border-bottom: 1px solid #cfcfcf;
+  font-size: 12px;
+  line-height: 38px;
+}
+#title_watch .title_valid .title_left .looksave-list .hoverBox .title .hoverBox-tit {
+  float: left;
+  color: #191919;
+}
+#title_watch .title_valid .title_left .looksave-list .hoverBox .title .clearrec {
+  float: right;
+  color: #989898;
+}
+#title_watch .title_valid .title_left .looksave-list .hoverBox .today p {
+  margin: 5px 0 0 7px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #1a9eff;
+  background: url("../img/watch/indexicons.png") no-repeat -393px -330px;
+  padding-left: 14px;
+}
+#title_watch .title_valid .title_left .looksave-list .hoverBox .today ul {
+  border-left: 1px solid #83caff;
+  margin-left: 10px;
+  padding-left: 5px;
+  overflow: hidden;
+}
+#title_watch .title_valid .title_left .looksave-list .hoverBox .today ul li {
+  padding-left: 6px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  font-weight: 400;
+}
+#title_watch .title_valid .title_left .looksave-list .hoverBox .today ul li:hover {
+  background: #1a9eff;
+}
+#title_watch .title_valid .title_left .looksave-list .hoverBox .today ul li .name {
+  width: 135px;
+  padding-right: 3px;
+  display: inline-block;
+  vertical-align: top;
+  color: #191919;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#title_watch .title_valid .title_left .looksave-list .hoverBox .today ul li .keep {
+  color: #5e5e5e;
+  padding-right: 8px;
+}
+#title_watch .title_valid .title_left .looksave-list .hoverBox .today ul li em {
+  display: none;
+}
+#title_watch .title_valid .title_left .phone-list {
+  display: none;
+  position: absolute;
+  top: 58px;
+  left: 1110px;
+  width: 154px;
+  height: 86px;
+  background: #fff;
+  border-radius: 5px;
+  z-index: 20;
+  padding: 20px 10px 22px;
+}
+#title_watch .title_valid .title_left .phone-list:before {
+  position: absolute;
+  left: 50px;
+  top: -4px;
+  content: "";
+  width: 0;
+  border-width: 0 4px 4px;
+  border-style: solid;
+  border-bottom-color: #fff;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+#title_watch .title_valid .title_left .phone-list .download {
+  float: left;
+  height: 12px;
+  background: url("../img/watch/icon_d01.png") no-repeat 19px 20px;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #969798;
+  padding: 50px 10px 0;
+  margin-right: 21px;
+}
+/*播放窗口*/
+.play-window {
+  width: 100%;
+  height: 647px;
+  background: #383a42;
+}
+.play-window .play-watch {
+  width: 1180px;
+  height: 626px;
+  background: url("../img/watch/watch.jpg") no-repeat;
+  margin: 55px auto 22px;
+}
+/*有效区*/
+.valid {
+  /*标头*/
+}
+.valid .watch-adv {
+  height: 175px;
+  background: url("../img/watch/watch-adv.jpg") no-repeat;
+}
+.valid .valid-left {
+  width: 800px;
+  float: left;
+  /*猜你喜欢*/
+  /*热门推荐*/
+  /*电影榜*/
+}
+.valid .valid-left .guess-like-box {
+  float: left;
+  width: 800px;
+  height: 648px;
+  margin-bottom: 192px;
+  overflow: hidden;
+}
+.valid .valid-left .guess-like-box .guess-like-list li {
+  float: left;
+  width: 180px;
+  height: 286px;
+  margin: 19px 20px 0 0;
+  padding-bottom: 3px;
+}
+.valid .valid-left .guess-like-box .guess-like-list li .guess-img {
+  position: relative;
+}
+.valid .valid-left .guess-like-box .guess-like-list li .guess-img img {
+  width: 180px;
+  height: 240px;
+  border-radius: 3px;
+}
+.valid .valid-left .guess-like-box .guess-like-list li .guess-img span {
+  width: 180px;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: url("../img/watch/textbg.png") no-repeat;
+}
+.valid .valid-left .guess-like-box .guess-like-list li .guess-img i {
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  width: 17px;
+  height: 17px;
+  background: url("../img/watch/indexicons.png") no-repeat -289px -365px;
+  display: none;
+}
+.valid .valid-left .guess-like-box .guess-like-list li .guess-img i:hover {
+  background-position: -253px -365px;
+}
+.valid .valid-left .guess-like-box .guess-like-list li .desc {
+  margin-top: 13px;
+}
+.valid .valid-left .guess-like-box .guess-like-list li .desc .movie_name {
+  float: left;
+  width: 144px;
+  height: 12px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #191919;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+.valid .valid-left .guess-like-box .guess-like-list li .desc .movie_name:hover {
+  color: #1a9eff;
+}
+.valid .valid-left .guess-like-box .guess-like-list li .desc .score {
+  float: right;
+  width: 20px;
+  height: 18px;
+  text-align: right;
+  font-size: 14px;
+  color: #fc4413;
+  font-family: "Microsoft Yahei";
+}
+.valid .valid-left .guess-like-box .guess-like-list li .desc .movie_desc {
+  width: 100%;
+  height: 12px;
+  font-size: 12px;
+  color: #989898;
+  line-height: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.valid .valid-left .hot-recommend {
+  float: left;
+  width: 600px;
+  height: 513px;
+  overflow: hidden;
+}
+.valid .valid-left .hot-recommend .hot-recommend-list {
+  width: 100%;
+  margin-top: 19px;
+}
+.valid .valid-left .hot-recommend .hot-recommend-list li {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+.valid .valid-left .hot-recommend .hot-recommend-list li a {
+  display: block;
+}
+.valid .valid-left .hot-recommend .hot-recommend-list li a .hrecommend-list-content {
+  position: relative;
+  width: 180px;
+  height: 135px;
+}
+.valid .valid-left .hot-recommend .hot-recommend-list li a .hrecommend-list-content img {
+  border-radius: 6px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.valid .valid-left .hot-recommend .hot-recommend-list li a .hrecommend-list-content span {
+  width: 180px;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: url("../img/watch/textbg.png") no-repeat;
+}
+.valid .valid-left .hot-recommend .hot-recommend-list li a .hrecommend-list-content i {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  display: block;
+  color: #fff;
+  z-index: 1;
+}
+.valid .valid-left .movie-rank {
+  float: left;
+  width: 180px;
+}
+.valid .valid-left .movie-rank .movie-rank-list {
+  margin-top: 16px;
+  width: 100%;
+}
+.valid .valid-left .movie-rank .movie-rank-list .movie-list li {
+  float: left;
+}
+.valid .valid-left .movie-rank .movie-rank-list .movie-list li .mr-list-content {
+  display: none;
+  position: relative;
+  width: 180px;
+  height: 135px;
+  margin-bottom: 23px;
+}
+.valid .valid-left .movie-rank .movie-rank-list .movie-list li .mr-list-content a img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+}
+.valid .valid-left .movie-rank .movie-rank-list .movie-list li .mr-list-content a .over {
+  width: 180px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.valid .valid-left .movie-rank .movie-rank-list .movie-list li .mr-list-content a .name {
+  height: 16px;
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  color: #fff;
+  z-index: 1;
+  font-size: 13px;
+  line-height: 16px;
+}
+.valid .valid-left .movie-rank .movie-rank-list .movie-list li .mr-list-content a .name i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #1a9eff;
+  font-weight: 700;
+  text-align: center;
+  margin-right: 4px;
+}
+.valid .valid-left .movie-rank .movie-rank-list .movie-list li .mr-list-text {
+  width: 180px;
+  height: 14px;
+  margin-bottom: 19px;
+}
+.valid .valid-left .movie-rank .movie-rank-list .movie-list li .mr-list-text .name {
+  float: left;
+  display: inline-block;
+  height: 14px;
+  color: #191919;
+  z-index: 1;
+  font-size: 14px;
+  line-height: 14px;
+}
+.valid .valid-left .movie-rank .movie-rank-list .movie-list li .mr-list-text .name i {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #989898;
+  text-align: center;
+  margin-right: 4px;
+  color: #fff;
+}
+.valid .valid-left .movie-rank .movie-rank-list .movie-list li .mr-list-text .score {
+  float: right;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fc4413;
+}
+.valid .valid-right {
+  width: 380px;
+  float: left;
+  /*评论*/
+}
+.valid .valid-right .comment {
+  float: left;
+  width: 380px;
+  /*评论头*/
+  /*发表评论*/
+  /*评论列表*/
+}
+.valid .valid-right .comment .play-tit-module {
+  float: left;
+}
+.valid .valid-right .comment .mount {
+  float: right;
+  display: block;
+  height: 32px;
+  line-height: 34px;
+  color: #7f7f7f;
+}
+.valid .valid-right .comment .mount i {
+  color: #1a9eff;
+}
+.valid .valid-right .comment .addcomment #textarea {
+  width: 378px;
+  height: 122px;
+  border: 1px solid #c8c8c8;
+  margin: 19px 0 5px;
+  border-radius: 5px;
+}
+.valid .valid-right .comment .addcomment .match .match-text {
+  float: left;
+  width: 78px;
+  height: 28px;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  margin-right: 16px;
+}
+.valid .valid-right .comment .addcomment .match span {
+  float: left;
+  width: 70px;
+  height: 25px;
+  padding: 5px 0 0 10px ;
+  margin-right: 10px;
+}
+.valid .valid-right .comment .addcomment .match i {
+  height: 30px;
+  line-height: 30px;
+  color: #1a9eff;
+  text-decoration: underline;
+}
+.valid .valid-right .comment .addcomment .match #btn {
+  float: right;
+  width: 82px;
+  height: 30px;
+  background: #1a9eff;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 3px;
+}
+.valid .valid-right .comment .addcomment p {
+  float: right;
+  margin-top: 8px;
+  color: #7d7d7d;
+}
+.valid .valid-right .comment .addcomment p a {
+  color: #1a9eff;
+  text-decoration: underline;
+}
+.valid .valid-right .comment .comment-list {
+  margin-top: 24px;
+}
+.valid .valid-right .comment .comment-list .sort {
+  width: 380px;
+  height: 33px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.valid .valid-right .comment .comment-list .sort span {
+  padding: 0 16px 9px;
+  border-bottom: 1px solid transparent;
+  color: #191919;
+  line-height: 33px;
+}
+.valid .valid-right .comment .comment-list .sort span.active {
+  color: #1a9eff;
+  border-color: #1a9eff;
+}
+.valid .valid-right .comment .comment-list .hot-comment li {
+  padding: 15px 0 24px 0;
+  border-bottom: #b6b6b6 1px solid;
+  overflow: hidden;
+}
+.valid .valid-right .comment .comment-list .hot-comment li .message a {
+  float: left;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+.valid .valid-right .comment .comment-list .hot-comment li .message a img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.valid .valid-right .comment .comment-list .hot-comment li .message .name {
+  float: left;
+  width: 314px;
+  height: 13px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #191919;
+  margin-bottom: 5px;
+}
+.valid .valid-right .comment .comment-list .hot-comment li .message .time {
+  float: left;
+  font-size: 12px;
+  font-weight: 400;
+  color: #989898;
+}
+.valid .valid-right .comment .comment-list .hot-comment li .content {
+  width: 380px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5e5e5e;
+  line-height: 20px;
+  overflow: hidden;
+}
+.valid .valid-right .comment .comment-list .hot-comment li .support {
+  float: right;
+  width: 100px;
+  height: 12px;
+}
+.valid .valid-right .comment .comment-list .hot-comment li .support em {
+  margin-right: 10px;
+  visibility: hidden;
+  color: #000;
+}
+.valid .valid-right .comment .comment-list .hot-comment li .support em:hover {
+  color: #1a9eff;
+}
+.valid .valid-right .comment .comment-list .hot-comment li .support i {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: url("../img/watch/playicons.png") no-repeat -286px -187px;
+  margin-right: 5px;
+}
+.valid .valid-right .comment .comment-list .hot-comment li .support i:hover {
+  color: #1a9eff;
+  background-position: -286px -163px;
+}
+.valid .valid-right .comment .comment-list .hot-comment li .support b {
+  font-size: 12px;
+  color: #d8dfe9;
+}
+.valid .valid-right .comment .comment-list .page {
+  margin-top: 20px;
+}
+.valid .valid-right .comment .comment-list .page .tur-page-fill {
+  float: left;
+}
+.valid .valid-right .comment .comment-list .page .tur-page-fill input {
+  width: 28px;
+  height: 18px;
+  line-height: 18px;
+  display: inline-block;
+  border: #d8d8d8 1px solid;
+  text-align: center;
+}
+.valid .valid-right .comment .comment-list .page .tur-page-fill span {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+}
+.valid .valid-right .comment .comment-list .page .tur-page-fill a {
+  width: 58px;
+  height: 18px;
+  display: inline-block;
+  margin-left: 20px;
+  line-height: 18px;
+  border: 1px solid #d1d2d2 ;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #747474;
+}
+.valid .valid-right .comment .comment-list .page .tur-page-fill a:hover {
+  color: #1a9eff;
+  border-color: #1a9eff;
+}
+.valid .valid-right .comment .comment-list .page .turn-page-btn {
+  float: right;
+}
+.valid .valid-right .comment .comment-list .page .turn-page-btn a {
+  float: left;
+  width: 58px;
+  height: 18px;
+  display: inline-block;
+  margin-left: 20px;
+  line-height: 18px;
+  border: 1px solid #d1d2d2;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #747474;
+}
+.valid .valid-right .comment .comment-list .page .turn-page-btn a:hover {
+  border-color: #1a9eff;
+  color: #1a9eff;
+}
+.valid .valid-right .comment .comment-list .page .turn-page-btn a.disabled {
+  border-color: #d1d2d2;
+  color: #dadada;
+}
+.valid .play-tit-module h2 {
+  float: left;
+  height: 32px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #191919;
+  padding-left: 15px;
+  background: url("../img/watch/indexicons.png") no-repeat -395px -202px;
+  margin-right: 39px;
+}
+.valid .play-tit-module h2 em {
+  font-size: 14px;
+  color: #191919;
+}
+.valid .play-tit-module a {
+  float: left;
+  height: 32px;
+  font-size: 14px;
+  line-height: 40px;
+  color: #191919;
+  cursor: pointer;
+}
+.valid .play-tit-module a:hover {
+  color: #1a9eff;
+}
+.foot-adv {
+  width: 1180px;
+  height: 170px;
+  margin: 0 auto;
+  background: url("../img/watch/foot-adv.jpg") no-repeat;
+}
+.watch-footer {
+  width: 1180px;
+  margin: 0 auto;
+  height: 178px;
+  border-top: 1px solid #1a9eff;
+  padding-top: 13px;
+}
+.watch-footer p {
+  text-align: center;
+  line-height: 30px;
+  color: #989898;
+  font-size: 14px;
+}
+.watch-footer p a {
+  color: #989898;
+  padding: 0 6px;
+}
+.watch-footer p a:hover {
+  text-decoration: underline;
+}
+#goTop {
+  width: 40px;
+  height: 90px;
+  position: fixed;
+  right: 0;
+  bottom: 22px;
+  overflow: hidden;
+  z-index: 20;
+  display: none;
+}
+#goTop a {
+  width: 40px;
+  height: 40px;
+  background: url("../img/watch/icon_new.png") no-repeat;
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 5px;
+}
+#goTop a.go-top {
+  background-position: 0 0;
+}
+#goTop a.go-top:hover {
+  background-position: -52px 0;
+}
+#goTop a.go-feedback {
+  background-position: 0 -52px;
+}
+#goTop a.go-feedback:hover {
+  background-position: -52px -52px;
+}

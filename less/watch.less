@@ -1,0 +1,895 @@
+@import "public";
+body{
+    background: #fff;
+}
+.watch{
+    width:1180px;
+    margin: 0 auto;
+}
+.clearfix::after{
+    content:"";
+    clear: both;
+    display: block;
+}
+/*头部导航*/
+#title_watch{
+    .wh(100%,55px);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+    background: #242428;
+    .title_valid{
+        .watch;
+        height:55px;
+        overflow: hidden;
+        .title_left{
+            .fl;
+            height:40px;
+            margin: 14px 0 0 0;
+            .hd-logo{
+                .fl;
+                a{
+                    .wh(119px,29px);
+                    display: block;
+                    background: url('../img/watch/playicons.png') no-repeat -181px -124px;
+                    text-indent: -9999px;
+                    margin-right: 16px;
+                }
+            }
+            .nav-index{
+                .fl;
+                a{                    
+                    display: block;
+                    height:29px;
+                    line-height: 29px;
+                    padding: 0 20px;
+                    font-size: 14px;
+                    color: #989898;
+                    &:hover{
+                        color:#1a9eff
+                    }
+                }
+            }
+            .menu-guide{
+                .fl;
+                margin-right: 62px;
+                a{                    
+                    display: block;
+                    height:29px;
+                    width:52px;
+                    line-height: 29px;
+                    padding: 0 20px;
+                    font-size: 14px;
+                    color: #989898;
+                    background:url("../img/watch/indexicons.png") no-repeat -329px -554px;
+                    &:hover{
+                        color:#1a9eff;
+                        background-position:-329px -582px;                        
+                    }
+                }
+            }
+            
+            .search{
+                .fl;
+                margin-right: 114px;
+                input{
+                    .fl;
+                    .wh(361px,30px);
+                    background: #383a42;
+                    padding-left: 20px;
+                    border-radius: 5px 0 0 5px;
+                }
+                span{
+                    .fl;
+                    .wh(87px,30px);
+                    display: block;
+                    background: url("../img/watch/playicons.png") no-repeat -115px -40px;
+                }                
+            }
+            .tools{
+                .fl;
+                li{
+                    .fl;
+                    height:12px;
+                    padding-top: 27px;
+                    margin-right: 36px;
+                    background: url("../img/watch/playicons.png") no-repeat;
+                    color:#989898;
+                    &.look{
+                        background-position: -116px 0;
+                        
+                    }
+                    &.save{
+                        background-position: -172px -1px;
+                    }
+                    &.phone{
+                        background-position: -220px -1px;
+                        margin-right: 23px;
+                    }
+                }
+            }
+            .logre{
+                .fl;
+                display: block;
+                padding-top: 24px;
+                background: url("../img/watch/playicons.png") no-repeat -266px 0;
+                a{
+                    color:#989898;
+                    font-size: 12px;
+                    line-height: 19px;
+                }
+            }
+            .menu-guide-list{
+                .wh(100%,82px);
+                position: absolute;
+                left:0;
+                top:55px;
+                background: #191919;
+                display:none;
+                .layer-nav{
+                    margin-top: 24px;
+                    .nav-list01 {
+                        .fl;
+                        width:438px;
+                        padding-left: 17px;
+                        border-right: 1px solid #c5c5c5;
+                        li{
+                            .fl;
+                            margin-bottom:15px;
+                            padding:0 29px;
+                            a{
+                                color: white;
+                                font-size: 12px;
+                                &:hover{
+                                    color:#1a9eff;
+                                }
+                            }
+                        }
+                    }
+                    .nav-list02 {
+                        .fl;
+                        width: 128px;
+                        padding-left: 18px;
+                        border-right: #c5c5c5 1px solid;
+                        li{
+                            .fl;
+                            width: 48px;
+                            margin:0 6px 15px 6px; 
+                            text-align: center;
+                            a{
+                                color: white;
+                                &:hover{
+                                    color:#1a9eff;
+                                }
+                            }
+                        }
+                    }
+                    .nav-biglist {
+                        .fl;
+                        width: 176px;
+                        padding:0 2px 0 4px;
+                        height: 46px;
+                        border-right: #c5c5c5 1px solid;
+                        li{
+                                .fl;
+                                .wh(28px,44px);
+                                margin: 0 8px;
+                                a{
+                                    .wh(28px,16px);
+                                    display: inline-block;
+                                    padding-top: 28px;
+                                    background: url("../img/watch/indexicons.png") no-repeat;
+                                    color: white;
+                                    font-size: 12px;
+                                    line-height: 19px;
+                                    &.store {
+                                        background-position: -240px -160px;
+                                    }
+                                    &.fengxiu {
+                                        background-position: -272px -160px;
+                                    }
+                                    &.mojing {
+                                        background-position: -305px -160px;
+                                    }
+                                    &.licai{
+                                        background-position: -338px -160px;
+                                    }
+                                }
+                            }
+                    }
+                    .nav-download-item {
+                            .fl;
+                            .wh(120px,28px);
+                            background-color: #208fff;
+                            background: url(../img/watch/download.png) no-repeat;
+                            box-shadow: #0082ff 0 0 5px;
+                            border-radius: 2px;
+                            margin-right: 24px;
+                            &:nth-of-type(1){
+                                margin-left: 42px;
+                            }
+                            a{                                
+                                width:90px;
+                                display: inline-block;  
+                                text-align: center;                               line-height: 28px;
+                                color: white;
+                            }
+                            span{
+                                display: block;
+                                font-size: 12px;
+                                color:#ffffff;
+                            }
+                    }
+                }              
+            }
+            .looksave-list{
+                position: absolute;
+                top:59px;
+                &#viewRecordPane{
+                
+                left:1016px;
+                display:none;
+                }         
+                &#viewRecordPane1{
+                    left:1078px;
+                    display:none;
+                }               
+                .hoverBox{
+                    .wh(252px,300px);
+                    background: #fff;
+                    border-radius: 5px;
+                    z-index:20;
+                    &:before{
+                        position: absolute;
+                        left:15px;
+                        top:-4px;
+                        content: "";
+                        width:0;
+                        border-width:0 4px 4px;
+                        border-style: solid;
+                        border-bottom-color:#fff; 
+                        border-left-color: transparent;
+                        border-right-color: transparent;
+                    }
+                    .title{
+                        .wh(216px,38px);
+                        padding:0 22px 0 14px;
+                        border-bottom: 1px solid #cfcfcf;
+                        font-size: 12px;
+                        line-height:38px; 
+                        .hoverBox-tit{
+                            .fl;
+                             color:#191919;
+                        }
+                        .clearrec{
+                            .fr;
+                            color:#989898;
+                        }                        
+                    }    
+                    .today{
+                        p{
+                            margin: 5px 0 0 7px;
+                            height: 24px;
+                            line-height: 24px;
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: #1a9eff;
+                            background: url("../img/watch/indexicons.png") no-repeat -393px -330px;
+                            padding-left: 14px;
+                        }
+                        ul{
+                            border-left: 1px solid #83caff;
+                            margin-left: 10px;
+                            padding-left: 5px;
+                            overflow: hidden;
+                            li{
+                                padding-left: 6px;  
+                                height: 25px;
+                                line-height: 25px;
+                                font-size: 12px;
+                                font-weight: 400;
+                                &:hover{
+                                    background: #1a9eff;
+                                }
+                                .name{
+                                    width:135px;
+                                    padding-right: 3px;
+                                    display: inline-block;   
+                                    vertical-align: top; 
+                                    color: #191919;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                }
+                                .keep{
+                                    color: #5e5e5e;
+                                    padding-right: 8px;
+                                }
+                                em{
+                                    display: none;
+                                }
+                            }
+                          }
+               
+                    }  
+                }
+            }
+            .phone-list{
+                display: none;
+                position: absolute;
+                top:58px;
+                left:1110px;
+                .wh(154px,86px);
+                background: #fff;
+                border-radius: 5px;
+                z-index:20;
+                padding:20px 10px 22px;
+                &:before{
+                    position: absolute;
+                    left:50px;
+                    top:-4px;
+                    content: "";
+                    width:0;
+                    border-width:0 4px 4px;
+                    border-style: solid;
+                    border-bottom-color:#fff; 
+                    border-left-color: transparent;
+                    border-right-color: transparent;
+                }
+                .download{
+                    .fl;
+                    height:12px;
+                    background: url("../img/watch/icon_d01.png") no-repeat 19px 20px;
+                    display: block;
+                    text-align: center;
+                    font-size: 12px;
+                    color: #969798;
+                    padding: 50px 10px 0;
+                    margin-right: 21px;
+                }
+                
+            }
+                           
+            }
+
+        }
+       
+    }
+/*播放窗口*/
+.play-window{
+    .wh(100%,647px);
+    background: #383a42;
+    .play-watch{
+        .wh(1180px,626px);
+        background: url("../img/watch/watch.jpg") no-repeat;
+        margin: 55px auto 22px;
+    }
+}
+/*有效区*/
+.valid{
+    .watch-adv{
+        height:175px;
+        background:url("../img/watch/watch-adv.jpg") no-repeat;
+    }
+    .valid-left{
+        width:800px;
+        .fl;
+         /*猜你喜欢*/
+        .guess-like-box{
+        .fl;
+        .wh(800px,648px); 
+        margin-bottom: 192px;  
+        overflow: hidden; 
+        .guess-like-list{   
+                li{                   
+                    .fl;
+                    .wh(180px,286px);
+                    margin: 19px 20px 0 0;
+                    padding-bottom: 3px;
+                    .guess-img{
+                        position: relative;
+                        img{
+                            .wh(180px,240px);
+                            border-radius: 3px;
+                        }
+                        span{
+                            .wh(180px,52px);
+                            position: absolute;
+                            left:0;
+                            bottom:0;
+                            background:url("../img/watch/textbg.png") no-repeat;
+                        }
+                        i{
+                            position: absolute;
+                            left:4px;
+                            bottom:4px;
+                            .wh(17px,17px);
+                            background:url("../img/watch/indexicons.png") no-repeat -289px -365px;
+                            display: none;
+                            &:hover{
+                                background-position: -253px -365px
+                            }
+                        }
+                    }                  
+                    .desc{
+                        margin-top: 13px;
+                        .movie_name{
+                                .fl;
+                                .wh(144px,12px);
+                                font-size: 12px;
+                                line-height: 12px;
+                                color:#191919;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                margin-bottom: 10px;
+                                &:hover{
+                                    color:#1a9eff;
+                                }                   
+                        }
+                        .score{
+                            .fr;
+                            .wh(20px,18px);
+                            text-align: right;
+                            font-size: 14px;
+                            color: #fc4413;
+                            font-family: "Microsoft Yahei";
+                        }
+                        .movie_desc{
+                            .wh(100%,12px);
+                            font-size: 12px;
+                            color: #989898;
+                            line-height: 12px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+        
+            }
+        }
+ 
+    /*热门推荐*/
+       .hot-recommend{
+        .fl;
+        .wh(600px,513px);
+        overflow: hidden;
+        .hot-recommend-list{
+            width:100%;
+            margin-top: 19px;
+            li{
+                .fl;
+                margin:0 20px 20px 0;
+                a{
+                    display: block;
+                    .hrecommend-list-content{
+                        position: relative;
+                        .wh(180px,135px);
+                        img{
+                            border-radius: 6px;
+                            position: absolute;
+                            left:0;
+                            top:0;
+                            .wh(100%,100%);
+                        }
+                        span{
+                            .wh(180px,52px);
+                            position: absolute;
+                            left:0;
+                            bottom:0;
+                            background:url("../img/watch/textbg.png") no-repeat;
+                        }
+                        i{
+                            position: absolute;
+                            left: 8px;
+                            bottom: 8px;
+                            display: block;
+                            color:#fff;
+                            z-index: 1;
+                            // z-index: 3;
+                        }
+                    }
+
+                }
+               
+               
+            }
+        }
+       }
+     /*电影榜*/
+       .movie-rank{
+        .fl;
+        width:180px;
+        .movie-rank-list{
+            margin-top: 16px;
+            width:100%;
+            .movie-list{
+                li{
+                    .fl;
+                        .mr-list-content{
+                            display: none;
+                            position: relative;
+                            .wh(180px,135px);
+                            margin-bottom: 23px;
+                            a{
+                                img{
+                                    position: absolute;
+                                    left:0;
+                                    top:0;
+                                    border-radius: 6px;
+                                    .wh(100%,100%);
+                                }
+                                .over{
+                                    .wh(180px,30px);
+                                    position: absolute;
+                                    left:0;
+                                    bottom:0;
+                                    background-color: #000;
+                                    opacity:0.5;
+                                    filter: alpha(opacity=50);
+                                }
+                                .name{
+                                        height:16px;
+                                        position: absolute;
+                                        left: 8px;
+                                        bottom: 8px;
+                                        color:#fff;
+                                        z-index: 1;
+                                        font-size: 13px;
+                                        line-height: 16px;
+                                       i{    
+                                            display: inline-block;
+                                            .wh(16px,16px);
+                                            border-radius: 50%;
+                                            background-color: #1a9eff;
+                                            font-weight: 700;
+                                            text-align: center;
+                                            margin-right: 4px;
+                                        }
+                                }                                               
+                            }
+                            
+                        }
+                        .mr-list-text{
+                            .wh(180px,14px);
+                            margin-bottom: 19px;
+                            .name{
+                                .fl;
+                                display: inline-block;
+                                height:14px;
+                                color:#191919;
+                                z-index: 1;
+                                font-size: 14px;
+                                line-height: 14px;
+                                i{    
+                                    display:inline-block; 
+                                    .wh(14px,14px);
+                                    border-radius: 50%;
+                                    background-color: #989898;
+                                    text-align: center;
+                                    margin-right: 4px;
+                                    color:#fff;
+                                }
+                            }
+                            .score{
+                                .fr;
+                                font-size: 14px;
+                                font-weight: 400;
+                                color: #fc4413;
+                            }
+                        }
+                   
+                }
+            }
+        }
+       }    
+    }
+    .valid-right{
+        width:380px;
+        .fl;
+         /*评论*/
+        .comment{
+        .fl;
+        width:380px;
+         /*评论头*/
+        .play-tit-module{
+            .fl;
+        }
+        .mount{
+            .fr;
+            display: block;
+            height:32px;
+            line-height: 34px;
+            color:#7f7f7f;
+            i{
+                color:#1a9eff;
+            }
+        }
+         /*发表评论*/
+        .addcomment{
+            #textarea{
+                .wh(378px,122px);
+                border:1px solid #c8c8c8;
+                margin: 19px 0 5px;
+                border-radius: 5px;
+            }
+            .match{
+                .match-text{
+                    .fl;
+                    .wh(78px,28px);
+                    border:1px solid #c8c8c8;
+                    border-radius: 3px;
+                    margin-right: 16px;
+                }
+                span{
+                    .fl;
+                    .wh(70px,25px);
+                    padding:5px 0 0 10px ;
+                    margin-right: 10px;
+                }
+                i{
+                     height:30px;
+                     line-height: 30px;
+                     color:#1a9eff;
+                     text-decoration:underline;
+                }
+                #btn{
+                    .fr;
+                    .wh(82px,30px);
+                    background: #1a9eff;
+                    color:#fff;
+                    line-height: 30px;
+                    text-align: center;
+                    border-radius: 3px;
+                }
+            }
+            p{
+                .fr;
+                margin-top: 8px;
+                color:#7d7d7d;
+                a{
+                    color:#1a9eff;
+                    text-decoration: underline;
+                }
+            }
+        }
+         /*评论列表*/
+        .comment-list{
+            margin-top: 24px;
+            .sort{
+                width:380px;
+                height:33px;
+                border-bottom:1px solid #e8e8e8;
+                span{
+                    padding:0 16px 9px;
+                    border-bottom: 1px solid transparent;
+                    color:#191919;
+                    line-height: 33px;
+                    &.active{
+                        color:#1a9eff;
+                        border-color: #1a9eff;
+                    }                  
+                   
+              }
+            }
+            .hot-comment{
+                li{
+                    padding: 15px 0 24px 0;
+                    border-bottom: #b6b6b6 1px solid;
+                    overflow: hidden;
+                    .message{
+                        a{
+                            .fl;
+                            .wh(32px,32px);
+                            margin-right: 10px;
+                            img{
+                                .wh(32px,32px);
+                                border-radius: 50%;
+                            }                           
+                        }
+                        .name{
+                            .fl;
+                            width:314px;
+                            height:13px;
+                            display: inline-block;
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #191919;
+                            margin-bottom: 5px;
+                        }
+                        .time{
+                            .fl;
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: #989898;
+                        }
+                    }
+                    .content{
+                        width: 380px;
+                        margin-top: 25px;
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #5e5e5e;
+                        line-height: 20px;
+                        overflow: hidden;
+                    }
+                    .support{
+                        .fr;
+                        .wh(100px,12px);
+                        em{
+                            margin-right: 10px;    
+                            visibility: hidden;
+                            color:#000;
+                            &:hover{
+                                color:#1a9eff;
+                            }
+                        }
+                        i{
+                            .wh(15px,15px);
+                            display: inline-block;
+                            background: url("../img/watch/playicons.png") no-repeat -286px -187px;
+                            margin-right: 5px;
+                            &:hover{
+                                color: #1a9eff;
+                                background-position:  -286px -163px;
+                            }
+                        }
+                        b{
+                            font-size: 12px;
+                            color:#d8dfe9;
+                        }
+                    }
+                }
+            }
+            .page{
+                margin-top: 20px;
+                .tur-page-fill{
+                    .fl;
+                    input{
+                        .wh(28px,18px);
+                        line-height: 18px;
+                        display: inline-block;
+                        border: #d8d8d8 1px solid;
+                        text-align: center;
+                    }
+                    span{
+                        display: inline-block;
+                        margin-left: 4px;
+                        font-size: 12px;
+                        height: 20px;
+                        line-height: 20px;
+                    }
+                    a{
+                        .wh(58px,18px);
+                        display: inline-block;
+                        margin-left: 20px;
+                        line-height: 18px;
+                        border: 1px solid #d1d2d2 ;
+                        border-radius: 2px;
+                        text-align: center;
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: #747474;
+                        &:hover{
+                            color: #1a9eff;
+                            border-color: #1a9eff;
+                        }
+                    }
+                   
+                }
+                .turn-page-btn{
+                    .fr;  
+                    a{
+                        .fl;
+                        .wh(58px,18px);                 
+                        display: inline-block;
+                        margin-left: 20px;
+                        line-height: 18px;
+                        border: 1px solid #d1d2d2; 
+                        border-radius: 2px;
+                        text-align: center;
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: #747474;
+                        &:hover{
+                            border-color: #1a9eff;
+                            color: #1a9eff;                  }
+                        &.disabled{
+                            border-color: #d1d2d2;
+                            color: #dadada;
+                        }
+                    }                   
+                }
+            }           
+        }
+        }
+    }
+    /*标头*/
+    .play-tit-module{
+        h2{
+            .fl;
+            height:32px;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight:400;
+            color: #191919;
+            padding-left: 15px;
+            background:url("../img/watch/indexicons.png") no-repeat -395px -202px;
+            margin-right: 39px;
+            em{
+                font-size: 14px;
+                color:#191919;
+            }
+        }
+        a{
+            .fl;
+            height:32px;
+            font-size: 14px;
+            line-height: 40px;
+            color:#191919;
+            cursor: pointer;
+            &:hover{
+                color:#1a9eff;
+            }
+        }
+    }
+    
+}
+.foot-adv{
+    .wh(1180px,170px);
+    margin: 0 auto;
+    background:url("../img/watch/foot-adv.jpg") no-repeat;
+}
+.watch-footer{
+    .watch;
+    height:178px;
+    border-top: 1px solid #1a9eff;
+    padding-top:13px;
+    p{
+        text-align: center;
+        line-height: 30px;
+        color: #989898;
+        font-size: 14px;
+        a{
+            color: #989898;
+            padding: 0 6px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+#goTop{
+    .wh(40px,90px);
+    position: fixed;
+    right: 0;
+    bottom: 22px;
+    overflow: hidden;
+    z-index:20;
+    display: none;
+    a{
+        .wh(40px,40px);
+        background: url("../img/watch/icon_new.png") no-repeat;
+        display: block;
+        text-indent: -9999px;
+        overflow: hidden;
+        cursor: pointer;
+        margin-top: 5px;
+        &.go-top{
+            background-position:0 0;
+            &:hover{
+                background-position:-52px 0;
+            }
+        }
+        &.go-feedback{
+            background-position:0 -52px;
+            &:hover{
+                background-position:-52px -52px;
+            }
+        }
+    }
+    
+}

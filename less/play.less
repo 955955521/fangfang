@@ -1,0 +1,93 @@
+@import "public";
+.play_content{
+    .layout;
+    background: #fff;
+    border-bottom: 1px solid #dedede;
+    margin: 0 auto 30px;
+    .play_use{
+        width:1076px;
+        padding: 0 12px;
+        .vip-film-filter{
+            width:100%;
+            height: 28px;
+            padding: 20px 0 30px;
+            li{
+                .fl;
+                a{
+                    display: block;
+                    height:28px;
+                    padding:0 21px;
+                    line-height: 28px;
+                    &.active{
+                        background: #0b68c8;
+                        color:#fff;
+                    }
+                    
+                }
+                
+            }
+        }
+        .vip-film-classify{
+            height: 40px;
+            border: 1px solid #dedede;
+            background: #f8f8f8;
+            margin-bottom: 30px;
+            li{
+                .fl;
+                border-right:1px solid #dedede;
+                a{
+                    &:before{
+                        position: absolute;
+                        left:0;
+                        top:0;
+                        content:"";
+                        width:126px;
+                        height:0;
+                        border-top:4px solid #0b68c8;
+                        border-left:1px solid transparent;
+                        border-right:1px solid transparent;
+                        display: none;
+                    }
+                    &:after{
+                        content:"";
+                        position: absolute;
+                        left:0;
+                        bottom:-1px;
+                        height:1px;
+                        width:128px;
+                        background: #fff;
+                        display: none;
+                    }
+                    position: relative;
+                    display: block;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 14px;
+                    font-family: "微软雅黑";
+                    text-align: center;
+                    color: #0b68c8;
+                    padding: 0 36px;
+                    margin-left: -1px;
+                    &.active{
+                       background: #fff;
+                       border-left:1px solid #dedede;
+                       &:before{
+                           display: block;
+                       }
+                       &:after{
+                        display: block;
+                    }
+                    }
+                }
+            }
+        }
+        .recommend_box{
+            #play_list{
+                margin-right: -20px;
+                li{
+                    margin-right: 13px;
+                }
+            }
+        }
+    }
+}

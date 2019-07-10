@@ -1,0 +1,283 @@
+@import "public";
+body{
+    background: #f9f9f9;
+}
+/*有效区*/
+.login_valid{
+    width:1000px;
+    margin: 0 auto;
+}
+/*头部*/
+.login_title{
+    height:89px;
+    h2{
+        margin-top: 25px;
+        a{
+            .wh(169px,39px);
+            display: block;
+            background: url("../img/login/new-sso.png") no-repeat 0 -305px;
+            text-indent: -9999px;
+        }
+    }
+}
+/*主题内容*/
+.login_content{
+    .wh(100%,542px);
+    background: #46a4e9;
+    .new-sso-body{
+        position: relative;
+        height:542px;
+        background: url("../img/login/mbanner.jpg") no-repeat;
+        /*背景图*/
+        .new-sso-duang{
+            .wh(587px,450px);
+            position: absolute;
+            top: 67px;
+            left: 0;
+            background: url("../img/login/duang.jpg") no-repeat;
+        }
+         /*主内容区*/
+        .new-sso-box{
+            position: absolute;
+            top: 53px;
+            right: 40px;
+            .wh(284px,403px);
+            padding: 21px 24px;
+            background: #fff;
+            /*登录/注册*/
+            h2{
+                .wh(81px,20px);
+                background: url("../img/login/new-sso.png") no-repeat;
+                text-indent: -999px;               
+                &.new-sso-login{
+                    background-position:  -100px 0;
+                    margin-bottom: 13px;
+                }
+                &.new-sso-register{
+                    background-position:  0 0;
+                    margin-bottom: 13px;
+                }
+            }
+             /*错误信息提示*/
+            .sso-error-message{
+                .wh(284px,28px);
+                line-height: 28px;
+                font-size: 12px;
+                color: #fc4040;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+             /*输入框*/
+            .sso-input-wraper{
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                em{
+                    .fl;
+                    .wh(30px,30px);
+                    background: url("../img/login/new-sso.png") no-repeat;
+                    &.sso_name{                   
+                        background-position:  -90px -30px;
+                    }
+                    &.sso_pwd{
+                        background-position: -30px -30px;
+                    }
+                     &.sso_name_register{
+                        background-position:0 -30px;
+                     }
+                }   
+                i{
+                    .fl;
+                    .wh(24px,24px);
+                    padding: 3px;
+                    background: url("../img/login/new-sso.png") no-repeat -37px -67px;
+                }                        
+                input[type="text"]{
+                    .fl;
+                    .wh(222px,30px);
+                    line-height: 30px;
+                    font-size: 12px;
+                    color: #333;                    
+                }
+            }
+             /*验证*/
+            .sso-match-wraper{
+                margin-bottom: 10px;
+                 /*验证输入*/
+                .new-sso-fk{
+                    .fl;
+                    .wh(140px,30px);
+                    border:1px solid #dddddd;
+                    margin-right: 8px;
+                    em{
+                        .fl;
+                        .wh(30px,30px);
+                        background: url("../img/login/new-sso.png") no-repeat -60px -30px;                    
+                    }
+                    .new-sso-idc{
+                        .fl;
+                        .wh(110px,30px);
+                    }      
+                }
+                /*验证码*/
+                .new-sso-idc-img{
+                    .fl;
+                    .wh(70px,25px);
+                    border:1px solid #ddd;
+                    padding:5px 0 0 20px ;
+                    margin-right: 10px;
+                }
+                .new-sso-fes-btn{
+                    .fl;
+                    .wh(30px,30px);   
+                    border:1px solid #dddddd; 
+                    background: url("../img/login/new-sso.png") no-repeat -120px -30px;   
+                    &:hover{
+                        border-color: #1a9eff;
+                        background-position: -150px -30px;
+                    }            
+                } 
+                /*发送手机验证码*/  
+                a{
+                    .fl;
+                    .wh(132px,30px);
+                    border:1px solid #ddd;
+                    line-height: 30px;
+                    text-align: center;
+                    font-size: 14px;
+                    color:#999;
+                }           
+               
+            }
+            /*记住密码/协议*/ 
+            .sso-checkbox-wraper{
+                margin-bottom: 10px;
+                .remeber{
+                    display: none;
+                }
+                label{
+                    .fl;
+                    display: block;
+                    .wh(14px,14px);
+                    margin-right: 5px;
+                    background:url("../img/login/new-sso.png") no-repeat 0 -66px;
+                    cursor: pointer;
+                    &.active{
+                        background-position: -20px -66px;
+                    }                    
+                }
+                .remeber_text{
+                    color:#999;
+                    cursor: pointer;
+                    a{
+                        color:#1a9eff;
+                    }
+                }
+                /*找回密码*/ 
+                .sso-psw-back{
+                    .fr;
+                    a{
+                        color:#1a9eff;
+                        padding: 0 5px 0;
+                        border-right: 1px solid #1a9eff;
+                        cursor: pointer;
+                        &:nth-last-child(1){
+                            padding-right: 0;
+                            border-right-width:0; 
+                        }
+                    }
+                }
+            }
+            input[type="button"]{
+                .wh(284px,38px);
+                background: #1a9eff;
+                color:#fff;
+                margin-bottom: 10px;
+                cursor: pointer;
+                &:hover{
+                    background: #69bfff;
+                }
+            }
+             /*问题/其他方式登录*/ 
+            .sso-phe-sub{
+                &.sso-phe-sub-login{
+                    margin-bottom: 119px;
+                }
+                &.sso-phe-sub-register{
+                    margin-bottom: 34px;
+                } 
+                /*问题*/ 
+                .new-sso-quesstion{
+                    .fl;
+                    padding-left: 18px;
+                    height: 15px;
+                    line-height: 15px;
+                    color:#999;
+                    background: url("../img/login/new-sso.png") no-repeat 3px -384px;
+                    cursor: pointer;
+
+                }
+                .mobilecheck{
+                    .fr;
+                    color: #1a9eff;
+                    cursor: pointer;
+                }
+            }
+             /*其他方式登录*/ 
+            .otherlogin{
+                i{
+                    display: inline-block;
+                    .wh(74px,4px);
+                    border-top:1px solid #e1e1e1;
+                }
+                .otherlogin_left{
+                    margin: 0 5px 0 23px;
+                }
+                .otherlogin_right{
+                    margin: 0 23px 0 5px;
+                }
+                span{
+                    color:#999999;
+                }
+            }
+             /*登录方式*/ 
+            .login_method{
+                text-align: center;
+                margin-top: 14px;
+                li{
+                    .wh(30px,30px);
+                    margin:0 10px;
+                    display: inline-block;
+                    text-indent: -9999px;
+                    background: url("../img/login/new-sso.png") no-repeat;
+                    cursor: pointer;
+                    &.qq{
+                        background-position: 0 -350px;
+                    }
+                    &.weibo{
+                        background-position: -30px -350px;
+                    }
+                    &.wechat{
+                        background-position: -60px -350px;
+                    }
+                }
+            }
+           
+            
+        }
+    }
+}
+ /*页尾*/ 
+.login_footer{
+    .wh(100%,86px);
+    .logfoot_con{
+        .wh(1000px,46px);
+        margin: 26px auto 0;
+        text-align: center;
+        line-height: 23px;
+        color: #999;
+    }
+}
+#register{
+    display: none;
+}

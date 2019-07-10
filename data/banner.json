@@ -1,0 +1,110 @@
+{
+  "banner": [
+    {
+      "src": "./img/index/1.jpg",
+      "alt": "天空之眼",
+      "href": "#",
+      "target": "_blank"
+    },
+    {
+      "src": "./img/index/2.jpg",
+      "alt": "合约男女",
+      "href": "#",
+      "target": "_blank"
+    },
+    {
+      "src": "./img/index/3.jpg",
+      "alt": "致命甜心",
+      "href": "#",
+      "target": "_blank"
+    },
+    {
+      "src": "./img/index/4.jpg",
+      "alt": "乘风破浪",
+      "href": "#",
+      "target": "_blank"
+    },
+    {
+      "src": "./img/index/5.jpg",
+      "alt": "好面不怕迟，待到月圆食",
+      "href": "#",
+      "target": "_blank"
+    },
+    {
+      "src": "./img/index/6.jpg",
+      "alt": "咱们分手吧",
+      "href": "#",
+      "target": "_blank"
+    },
+    {
+      "src": "./img/index/7.jpg",
+      "alt": "游戏规则",
+      "href": "#",
+      "target": "_blank"
+    },
+    {
+      "src": "./img/index/8.jpg",
+      "alt": "西游伏妖篇",
+      "href": "#",
+      "target": "_blank"
+    },
+    {
+      "src": "./img/index/9.jpg",
+      "alt": "别在电梯说",
+      "href": "#",
+      "target": "_blank"
+    }
+  ],
+  "vip_tips": [
+    {
+      "src": "./img/index/vip-tips.png"
+    }
+  ],
+  "page": [
+    {
+      "src": "./img/index/page01.jpg",
+      "href": "#",
+      "target": "_blank"
+    },
+    {
+      "src": "./img/index/page02.jpg",
+      "href": "#",
+      "target": "_blank"
+    },
+    {
+      "src": "./img/index/page03.jpg",
+      "href": "#",
+      "target": "_blank"
+    },
+    {
+      "src": "./img/index/page04.jpg",
+      "href": "#",
+      "target": "_blank"
+    },
+    {
+      "src": "./img/index/page05.jpg",
+      "href": "#",
+      "target": "_blank"
+    },
+    {
+      "src": "./img/index/page06.jpg",
+      "href": "#",
+      "target": "_blank"
+    },
+    {
+      "src": "./img/index/page07.jpg",
+      "href": "#",
+      "target": "_blank"
+    },
+    {
+      "src": "./img/index/page08.jpg",
+      "href": "#",
+      "target": "_blank"
+    },
+    {
+      "src": "./img/index/page09.jpg",
+      "href": "#",
+      "target": "_blank"
+    }
+  ]
+}
